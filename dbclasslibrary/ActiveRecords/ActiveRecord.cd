@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DbClassLibrary.ActiveRecord">
+    <Position X="0.5" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>JKSQAEIgMDgAhSQPCIAuZFYCAgNECARXaJRAQSiAJFA=</HashCode>
+      <FileName>ActiveRecordBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DbClassLibrary.ActiveRecords.TableDefinitionAttribute">
+    <Position X="9" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAQAAAAA=</HashCode>
+      <FileName>ActiveRecords\TableDefinitionAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DbClassLibrary.ActiveRecords.FieldDefintionAttribute">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>ActiveRecords\TableDefinitionAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DbClassLibrary.ActiveRecordSet" Collapsed="true">
+    <Position X="3" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>JAAYAABAICAABDQICACABAQEEIIAAAgG4ggIBAFABAA=</HashCode>
+      <FileName>ActiveRecordSet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DbClassLibrary.ActiveRecordSet&lt;T&gt;">
+    <Position X="8" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAACAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ActiveRecordSet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DbClassLibrary.Callflow.Callflows" Collapsed="true">
+    <Position X="10.75" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAADAgMAAAAAAAAAAA=</HashCode>
+      <FileName>Callflow\Callflow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DbClassLibrary.Callflow.Callflow">
+    <Position X="3.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAAggAAAEAAAAAgAAgAAAAAAAgAAAAAAAAM=</HashCode>
+      <FileName>Callflow\Callflow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DbClassLibrary.Callflow.Frame">
+    <Position X="5.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEOECBAAAYFAgGQAkAAgAAAwABAEBQEIAQ6AAAGgAEA=</HashCode>
+      <FileName>Callflow\Frame.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DbClassLibrary.Callflow.Attribute">
+    <Position X="8.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oBoFGUAKRAQgGIQqAQwcAEABMRlEAAECCxAoBAVE0AI=</HashCode>
+      <FileName>Callflow\Attribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Tahoma" Size="8.4" />
+</ClassDiagram>

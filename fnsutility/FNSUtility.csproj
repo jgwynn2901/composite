@@ -1,0 +1,229 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86E3827E-0337-4FA9-8F64-515A123B0C59}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>FnsUtility</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\FnsStrongNameKey.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FnsUtility</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;ASSERT</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;ASSERT</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="DbClassLibrary, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0b81b05ef904f1e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\DbClassLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FnsComposite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0b81b05ef904f1e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\FnsComposite.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FnsInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b81b05ef904f1e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\FnsInterfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FTP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b81b05ef904f1e3">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0b81b05ef904f1e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Messaging">
+      <Name>System.Messaging</Name>
+    </Reference>
+    <Reference Include="System.Net">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Annotations.cs" />
+    <Compile Include="ApplicationConfiguration.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseService.cs" />
+    <Compile Include="BaseWebEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CallingMethod.cs" />
+    <Compile Include="CertificateValidationCallback.cs" />
+    <Compile Include="ClaimSubmissionLogger.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="ConfigurationReader.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="CsvFileReader.cs" />
+    <Compile Include="Date.cs" />
+    <Compile Include="EmailTraceListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmailValidation.cs" />
+    <Compile Include="ErrorLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Eval.cs" />
+    <Compile Include="FileReader.cs" />
+    <Compile Include="IFileReader.cs" />
+    <Compile Include="IMethodLogger.cs" />
+    <Compile Include="Impersonate.cs" />
+    <Compile Include="IPerformanceMonitor.cs" />
+    <Compile Include="JqGridData.cs" />
+    <Compile Include="jQuery\DynamicQueryable.cs" />
+    <Compile Include="jQuery\IPagedList.cs" />
+    <Compile Include="jQuery\JqGridData.cs" />
+    <Compile Include="jQuery\PagedList.cs" />
+    <Compile Include="jQuery\PagingLinqExtensions.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="FileUtility.cs" />
+    <Compile Include="FnsConfigurationMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MailManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MsmqPolling.cs" />
+    <Compile Include="PerformanceMonitor.cs" />
+    <Compile Include="WebApiRequest.cs" />
+    <Compile Include="PolicyService.cs" />
+    <Compile Include="ProcessManager.cs" />
+    <Compile Include="RecordReader.cs" />
+    <Compile Include="ServiceManager.cs" />
+    <Compile Include="TextFileReader.cs" />
+    <Compile Include="TimeZoneInformation.cs" />
+    <Compile Include="VehicleLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUtility.cs" />
+    <Compile Include="XmlUtlity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

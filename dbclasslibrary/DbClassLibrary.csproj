@@ -1,0 +1,529 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD5D7C45-88C5-488D-85EF-2B72BB048224}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DbClassLibrary</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\FnsStrongNameKey.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DbClassLibrary</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DbLinq, Version=0.20.0.0, Culture=neutral, PublicKeyToken=61e015a67077348b, processorArchitecture=MSIL" />
+    <Reference Include="DbLinq.Oracle, Version=0.20.0.0, Culture=neutral, PublicKeyToken=61e015a67077348b, processorArchitecture=MSIL" />
+    <Reference Include="FnsComposite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0b81b05ef904f1e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0b81b05ef904f1e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0b81b05ef904f1e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0b81b05ef904f1e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0b81b05ef904f1e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <HintPath>..\..\..\app\JGwynn\product\11.2.0\client_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountHierarchyStep.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccountUser.cs" />
+    <Compile Include="ActiveFacilityCdLookup.cs" />
+    <Compile Include="ActiveLocationCodeList.cs" />
+    <Compile Include="ActiveRecordBase.cs" />
+    <Compile Include="ActiveRecordSet.cs" />
+    <Compile Include="ActiveRecords\ActiveGroupLocationLookup.cs" />
+    <Compile Include="ActiveRecords\Agent.cs" />
+    <Compile Include="ActiveRecords\AutoMakeModel.cs" />
+    <Compile Include="ActiveRecords\AutoMakeModels.cs" />
+    <Compile Include="ActiveRecords\ClaimSubmission.cs" />
+    <Compile Include="ActiveRecords\ClaimSubmissions.cs" />
+    <Compile Include="ActiveRecords\ConfigSetting.cs" />
+    <Compile Include="ActiveRecords\DedicatedWebServer.cs" />
+    <Compile Include="ActiveRecords\DestinationStatus.cs" />
+    <Compile Include="ActiveRecords\DestinationStatusRecords.cs" />
+    <Compile Include="ActiveRecords\Employee.cs" />
+    <Compile Include="ActiveRecords\EmployeeExtension.cs" />
+    <Compile Include="ActiveRecords\Employees.cs" />
+    <Compile Include="ActiveRecords\EncryptAttribute.cs" />
+    <Compile Include="ActiveRecords\EncryptAttributes.cs" />
+    <Compile Include="ActiveRecords\EncryptedActiveRecord.cs" />
+    <Compile Include="ActiveRecords\ExtendAsi.cs" />
+    <Compile Include="ActiveRecords\FileTransmissionDefActiveRecord.cs" />
+    <Compile Include="ActiveRecords\Greeting.cs" />
+    <Compile Include="ActiveRecords\LocationCode.cs" />
+    <Compile Include="ActiveRecords\LocationCodes.cs" />
+    <Compile Include="ActiveRecords\MiamiDadeClaimArchive.cs" />
+    <Compile Include="ActiveRecords\PerformanceData.cs" />
+    <Compile Include="ActiveRecords\Policies.cs" />
+    <Compile Include="ActiveRecords\Policy.cs" />
+    <Compile Include="ActiveRecords\PolicyExtension.cs" />
+    <Compile Include="ActiveRecords\PolicyLookup.cs" />
+    <Compile Include="ActiveRecords\PolicyLookupSet.cs" />
+    <Compile Include="ActiveRecords\RoutingPlan.cs" />
+    <Compile Include="ActiveRecords\RoutingPlans.cs" />
+    <Compile Include="ActiveRecords\SerialEntities.cs" />
+    <Compile Include="ActiveRecords\SerialEntity.cs" />
+    <Compile Include="ActiveRecords\Server.cs" />
+    <Compile Include="ActiveRecords\Servers.cs" />
+    <Compile Include="ActiveRecords\SpecificDestinationActiveRecord.cs" />
+    <Compile Include="ActiveRecords\TableDefinitionAttribute.cs" />
+    <Compile Include="Agent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AgentIdFromUploadKey.cs" />
+    <Compile Include="AhsActiveRecord.cs" />
+    <Compile Include="AhsActiveRecordSet.cs" />
+    <Compile Include="AHSExtension.cs" />
+    <Compile Include="AhsidFromLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AHSPolicy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AhsRecord.cs" />
+    <Compile Include="AmeripriseDriver.cs" />
+    <Compile Include="ApConfigBase.cs" />
+    <Compile Include="ApplicationConfiguration.cs" />
+    <Compile Include="ApplicationLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Appointment.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoMakeRecord.cs" />
+    <Compile Include="AutoMakeRecordSet.cs" />
+    <Compile Include="AutoModelRecord.cs" />
+    <Compile Include="AutoModelRecordSet.cs" />
+    <Compile Include="Branch.cs" />
+    <Compile Include="CallData.cs" />
+    <Compile Include="Callflow\AccountCallfowRecord.cs" />
+    <Compile Include="Callflow\AccountTips.cs" />
+    <Compile Include="Callflow\AddressBookRecord.cs" />
+    <Compile Include="Callflow\AddressBookRecordSet.cs" />
+    <Compile Include="Callflow\Attribute.cs" />
+    <Compile Include="Callflow\AttributeSet.cs" />
+    <Compile Include="Callflow\BranchRecord.cs" />
+    <Compile Include="Callflow\BranchRecords.cs" />
+    <Compile Include="Callflow\Callflow.cs" />
+    <Compile Include="Callflow\ClaimLookup.cs" />
+    <Compile Include="Callflow\ClaimNumberAssignmentRule.cs" />
+    <Compile Include="Callflow\ClaimNumberAssignmentRules.cs" />
+    <Compile Include="Callflow\DistributionSuppressionRecord.cs" />
+    <Compile Include="Callflow\DistributionSuppressionRecordSet.cs" />
+    <Compile Include="Callflow\EscalationPlan.cs" />
+    <Compile Include="Callflow\EscalationPlans.cs" />
+    <Compile Include="Callflow\Frame.cs" />
+    <Compile Include="Callflow\FrameSet.cs" />
+    <Compile Include="Callflow\IAttribute.cs" />
+    <Compile Include="Callflow\IFrame.cs" />
+    <Compile Include="Callflow\ILookupCode.cs" />
+    <Compile Include="Callflow\LookupCode.cs" />
+    <Compile Include="Callflow\LookupCodes.cs" />
+    <Compile Include="Callflow\RoutingAddress.cs" />
+    <Compile Include="Callflow\RoutingAddresses.cs" />
+    <Compile Include="Callflow\RoutingAddressRule.cs" />
+    <Compile Include="Callflow\RoutingAddressRules.cs" />
+    <Compile Include="Callflow\RuleRecord.cs" />
+    <Compile Include="Callflow\RuleRecordSet.cs" />
+    <Compile Include="Callflow\UserRecord.cs" />
+    <Compile Include="Callflow\UserRecordSet.cs" />
+    <Compile Include="CallRecord.cs" />
+    <Compile Include="CallRoutingRecord.cs" />
+    <Compile Include="CallXmlRecord.cs" />
+    <Compile Include="Carrier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarrierActiveRecord.cs" />
+    <Compile Include="ClaimAssignment.cs" />
+    <Compile Include="ClaimCmsId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClaimCsrId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClaimSubmission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClaimSubmissionLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CleanOldLocationRecords.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Column.cs" />
+    <Compile Include="ColumnList.cs" />
+    <Compile Include="ConfigSettings.cs" />
+    <Compile Include="ConnectString.cs" />
+    <Compile Include="Contact.cs" />
+    <Compile Include="AltNames.cs" />
+    <Compile Include="ContactActiveRecord.cs" />
+    <Compile Include="ContactActiveRecordSet.cs" />
+    <Compile Include="DatabaseInstance.cs" />
+    <Compile Include="Decryption.cs" />
+    <Compile Include="DriverExtended.cs" />
+    <Compile Include="Encryption.cs" />
+    <Compile Include="EntityResponse.cs" />
+    <Compile Include="EscalationOutcomeStep.cs" />
+    <Compile Include="EscalationOutcomeStepAdd.cs" />
+    <Compile Include="FirstNotice\AccountHierarchyStep.cs" />
+    <Compile Include="FirstNotice\Call.cs" />
+    <Compile Include="FirstNotice\Database.cs" />
+    <Compile Include="FirstNotice\FNSOWNER.cs" />
+    <Compile Include="DepartmentCodes.cs" />
+    <Compile Include="eSurancePolicy.cs" />
+    <Compile Include="FirstNotice\PerfData.cs" />
+    <Compile Include="iLogItem.cs" />
+    <Compile Include="Import\FroiImportFields.cs" />
+    <Compile Include="Import\FroiImportField.cs" />
+    <Compile Include="ICallData.cs" />
+    <Compile Include="Import\IFroiImportField.cs" />
+    <Compile Include="Import\IImportField.cs" />
+    <Compile Include="Import\ImportRecordType.cs" />
+    <Compile Include="Import\ImportRecordTypes.cs" />
+    <Compile Include="InboundAccount.cs" />
+    <Compile Include="ISqlParameterReader.cs" />
+    <Compile Include="JurisdictionState.cs" />
+    <Compile Include="LocationFromZip.cs" />
+    <Compile Include="MdClaimArchive.cs" />
+    <Compile Include="ObjectDumper.cs" />
+    <Compile Include="OdbcDsn.cs" />
+    <Compile Include="Opm\CallRouting.cs" />
+    <Compile Include="Opm\CallRoutings.cs" />
+    <Compile Include="Opm\ChangeCallRoutingStatus.cs" />
+    <Compile Include="Opm\ExtendedAsi.cs" />
+    <Compile Include="Opm\ExtendedRouting.cs" />
+    <Compile Include="Opm\ExtendedRoutings.cs" />
+    <Compile Include="Opm\OutputItem.cs" />
+    <Compile Include="Opm\OutputItems.cs" />
+    <Compile Include="PolicyActiveRecord.cs" />
+    <Compile Include="PolicyActiveRecordSet.cs" />
+    <Compile Include="Procedures\AddAccountUser.cs" />
+    <Compile Include="Procedures\SearchAhsNode.cs" />
+    <Compile Include="ReRouteCall.cs" />
+    <Compile Include="ResourceReader.cs" />
+    <Compile Include="RulesUsedBy.cs" />
+    <Compile Include="Security\AccessListManager.cs" />
+    <Compile Include="Security\Identities.cs" />
+    <Compile Include="Security\Identity.cs" />
+    <Compile Include="Security\LocationsUser.cs" />
+    <Compile Include="Security\LocationUsers.cs" />
+    <Compile Include="Security\SecurityLog.cs" />
+    <Compile Include="Security\UserAuthentication.cs" />
+    <Compile Include="Security\UserRecord.cs" />
+    <Compile Include="Security\UserSession.cs" />
+    <Compile Include="Security\UserSessions.cs" />
+    <Compile Include="Security\UserSso.cs" />
+    <Compile Include="SEDAccountHierarchyStep.cs" />
+    <Compile Include="EstarAppraiserDelete.cs" />
+    <Compile Include="SEDEmployee.cs" />
+    <Compile Include="SEDLocationNode.cs" />
+    <Compile Include="SEDVehicle.cs" />
+    <Compile Include="SessionData.cs" />
+    <Compile Include="SessionDataRecordSet.cs" />
+    <Compile Include="SessionKey.cs" />
+    <Compile Include="SqlParameterReader.cs" />
+    <Compile Include="UpdateANIAlternateInsuredNameRecords.cs" />
+    <Compile Include="UpdateANIPolicyRecords.cs" />
+    <Compile Include="UpdateANILocationCode.cs" />
+    <Compile Include="LocationCode.cs" />
+    <Compile Include="GetPolicyIdFromPolicyData.cs" />
+    <Compile Include="CopyAttributesRecord.cs" />
+    <Compile Include="CopyAttributesRecordSet.cs" />
+    <Compile Include="CrawfordNcciCodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CrawfordUserRecord.cs" />
+    <Compile Include="CsaaDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CsaaVehicle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbAggregate.cs" />
+    <Compile Include="DbBaseClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Driver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeExtension.cs" />
+    <Compile Include="EncyptAttributeSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EsisPolicyLookup.cs" />
+    <Compile Include="EstarAppraiser.cs" />
+    <Compile Include="EsuranceDriver.cs" />
+    <Compile Include="FileTranError.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileTranLogDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileTranLogRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileTranLogUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FraudLanguage.cs" />
+    <Compile Include="GetAHSID.cs" />
+    <Compile Include="GetAhsRecordUsingFein.cs" />
+    <Compile Include="GetCountyFromZip.cs" />
+    <Compile Include="GetFipsFromZip.cs" />
+    <Compile Include="GetUserId.cs" />
+    <Compile Include="GetZipFromCityState.cs" />
+    <Compile Include="Interfaces\IActiveRecord.cs" />
+    <Compile Include="Interfaces\IActiveRecordSet.cs" />
+    <Compile Include="Interfaces\IApplicationLog.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="LocationCityFromZip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocationStateFromZip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocationUser.cs" />
+    <Compile Include="MandatoryFields.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MercuryDestinations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NcciCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Opm\ChangeTransOutcomeStatus.cs" />
+    <Compile Include="Opm\ChangeTransOutcomeStepStatus.cs" />
+    <Compile Include="Opm\ISequenceStep.cs" />
+    <Compile Include="Opm\SpecificDestination.cs" />
+    <Compile Include="Opm\SpecificDestSeqStepRecord.cs" />
+    <Compile Include="Opm\SpecificDestSeqStepRecordSet.cs" />
+    <Compile Include="Opm\TranOutcomeRecordSet.cs" />
+    <Compile Include="Opm\TranOutcomeStepRecordSet.cs" />
+    <Compile Include="Opm\TranSequenceStepRecordSet.cs" />
+    <Compile Include="Opm\TransmissionOutcome.cs" />
+    <Compile Include="Opm\TransmissionOutcomeStep.cs" />
+    <Compile Include="Opm\TransmissionSequenceStep.cs" />
+    <Compile Include="Policy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PolicyExtension.cs" />
+    <Compile Include="ProcedureDefinition.cs" />
+    <Compile Include="ProcessUsers.cs" />
+    <Compile Include="Provider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProviderFollowup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueueAssignments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResetClaimCms.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResetClaimSubmission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResetProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResetProviderFollowup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SendMail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SentryLastLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sequence.cs" />
+    <Compile Include="SpecificDestination.cs" />
+    <Compile Include="SpecificDestSeqStep.cs" />
+    <Compile Include="SPParameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StateAntiSteering.cs" />
+    <Compile Include="StateFraud.cs" />
+    <Compile Include="TableDefinition.cs" />
+    <Compile Include="UnitOfWork.cs" />
+    <Compile Include="UpdateClaimSubmissionStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UpdateCsaaVendorNetwork.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UpdateKemperVendorNetwork.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UpdateXClaimData.cs" />
+    <Compile Include="Security\User.cs" />
+    <Compile Include="Security\UserGroup.cs" />
+    <Compile Include="Security\Users.cs" />
+    <Compile Include="UsState.cs" />
+    <Compile Include="UsStateRecordSet.cs" />
+    <Compile Include="Utility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vehicle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VehicleCoverage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VehicleLien.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VehicleLookup.cs" />
+    <Compile Include="Vendor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Opm\OutputItemSql.txt" />
+    <Content Include="Sql\DbClassLibPackageAMEP.sql" />
+    <Content Include="Sql\DbClassLibPackageCISG.sql" />
+    <Content Include="Sql\DbClassLibPackageCRAWP.sql" />
+    <Content Include="Sql\DbClassLibPackageESUP.sql" />
+    <Content Include="Sql\DbClassLibPackageFNSP.sql" />
+    <Content Include="Sql\DbClassLibPackageSEDP.sql" />
+    <Content Include="Sql\DbClassLibPackageSELP.sql" />
+    <Content Include="Sql\DbClassLibPackageSENP.sql" />
+    <None Include="ActiveRecords\ActiveRecord.cd" />
+    <None Include="DbClassLibrary.vsd" />
+    <None Include="Migrations\locationsUser.sql" />
+    <None Include="Security\Security.cd" />
+    <None Include="Sql\DbClassLibPackageTOWP.sql" />
+    <None Include="Sql\encryption.sql" />
+    <None Include="Sql\iLogItem.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
